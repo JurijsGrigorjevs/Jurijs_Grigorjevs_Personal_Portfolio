@@ -1,0 +1,100 @@
+﻿@model IEnumerable<CarInsurance.Models.Insuree>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 style="text-align: center; margin: 5px;">Insuree</h2>
+
+<!-- Button to navigate to the form for creating a new Insuree record -->
+<p style="text-align: left; margin: 5px;">
+    @Html.ActionLink("Create New Form", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<!-- Table to display the list of Insuree records -->
+<table class="table table-striped">
+    <tr>
+        <!-- Table headers dynamically generated using the DisplayNameFor helper method -->
+        <!-- These headers correspond to the properties of the Insuree model -->
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarMake)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DUI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SpeedingTickets)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CoverageType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quote)
+        </th>
+
+    </tr>
+    <!-- Iterates over each Insuree item in the model to populate the table rows -->
+    @foreach (var item in Model)
+    {
+        <tr>
+            <!-- Displays each property value of the Insuree item -->
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarMake)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DUI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpeedingTickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CoverageType) Full Coverage
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quote)
+            </td>
+            <td>
+                <!-- Action links for editing, viewing details, or deleting the Insuree record -->
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { style = "color: red;" })
+            </td>
+        </tr>
+    }
+
+</table>

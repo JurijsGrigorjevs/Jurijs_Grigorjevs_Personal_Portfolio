@@ -1,0 +1,124 @@
+﻿@model CarInsurance.Models.Insuree
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+@*Main container for the form layout*@
+<div class="row no-gutters m-3">
+    <!-- Card container for styling the form -->
+    <div class="card col-sm-12 col-md-10 col-lg-8 mx-auto shadow">
+        <div class="card-header text-center">
+            <!-- Header title for the form -->
+            <h5 class="m-0">Edit Insurance Form (Client Page)</h5>
+        </div>
+
+        <div class="card-body">
+            <!-- Begin a form to handle edit functionality -->
+            @using (Html.BeginForm())
+
+            {
+                // Generates an anti-forgery token for security
+                @Html.AntiForgeryToken()
+
+            <div class="row no-gutters">
+
+
+                <!-- Display validation summary for form errors -->
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <!-- Hidden input to store the unique ID of the Insuree -->
+                @Html.HiddenFor(model => model.Id)
+
+                @Html.HiddenFor(model => model.Id)
+
+                <!-- First Name input field -->
+                <div class="form-group col-md-12">
+                    <label for="FirstName" class="control-label col-md-2">First Name</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control", placeholder = "First Name" } })
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <!-- Last Name input field -->
+                <div class="form-group col-md-12">
+                    <label for="LastName" class="control-label col-md-2">Last Name</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control", placeholder = "Last Name" } })
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <!-- Email Address input field -->
+                <div class="form-group col-md-12">
+                    <label for="EmailAddress" class="control-label col-md-2">Email Address</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control", placeholder = "Email Address" } })
+                        @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+
+                <!-- Date of Birth input field -->
+                <div class="form-group col-md-12">
+                    <label for="DateOfBirth" class="control-label col-md-2">Date Of Birth</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DateOfBirth, new { htmlAttributes = new { @class = "form-control", placeholder = "Date of Birth" } })
+                        @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <!-- Car Year input field -->
+                <div class="form-group col-md-12">
+                    <label for="CarYear" class="control-label col-md-2">Car Year</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CarYear, new { htmlAttributes = new { @class = "form-control", placeholder = "Car year" } })
+                        @Html.ValidationMessageFor(model => model.CarYear, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+
+                <!-- Car Make input field -->
+                <div class="form-group col-md-12">
+                    <label for="CarMake" class="control-label col-md-2">Car Make</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CarMake, new { htmlAttributes = new { @class = "form-control", placeholder = "Car Make" } })
+                        @Html.ValidationMessageFor(model => model.CarMake, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <!-- Car Model input field -->
+                <div class="form-group col-md-12">
+                    <label for="CarModel" class="control-label col-md-2">Car Model</label>
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CarModel, new { htmlAttributes = new { @class = "form-control", placeholder = "Car Model" } })
+                        @Html.ValidationMessageFor(model => model.CarModel, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action buttons for submission and navigation -->
+                <p class="text-center">
+                    @Html.ActionLink("Back to Admin Page", "Index", null, new { @class = "btn btn-primary" })
+                    <button class="btn btn-primary" type="submit" style="background-color: green">
+                        Save
+                    </button>
+                </p>
+
+
+            }
+
+        </div>
+
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

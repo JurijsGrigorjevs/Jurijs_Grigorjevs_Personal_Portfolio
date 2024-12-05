@@ -1,0 +1,267 @@
+﻿
+/* General Styles */
+/* Setting the overall font style, line height, and removing default margins and paddings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom CSS to center 'Car Insurance' text */
+/* Styling for the header text with class 'carIns' */
+.carIns {
+    
+    margin: 0;
+    text-align: left;
+    color: gray;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+/* Centering the Frame */
+/* Styling the container that centers content vertically and horizontally */
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+/* Styling the Details Container */
+/* Appearance of the main content box displaying details */
+.details-content {
+    width: 50%; 
+    max-width: 800px; 
+    padding: 10px;
+    background: #ffffff; 
+    border: 2px solid #007bff; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+
+/* Styling the definition list elements */
+dl {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: darkblue;
+}
+
+
+/* Styling definition terms */
+dt {
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    
+}
+
+
+/* Styling definition descriptions */
+dd {
+    margin-left: 20px;
+    font-size: 1rem;
+    color: gray;  
+    
+}
+
+/* Highlight for Key Details */
+/* Styling for text that needs emphasis */
+.highlight {
+    font-weight: bold;
+}
+
+
+/* Centered Button Styling */
+/* Base styling for primary buttons */
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color:white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+
+    /* Hover effect for primary button */
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/* Center the form container */
+/* Styling for horizontally aligned forms */
+.form-horizontal {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Highlight the headings */
+/* Styling for form and content headings */
+h2, h4 {
+    color: #007bff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* Style form controls */
+/* Base styles for form input fields */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+
+/* Label styling */
+/* Appearance for form labels */
+.control-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+
+
+/* Validation message styling */
+/* Styling for error messages */
+.text-danger {
+    font-size: 0.9em;
+    color: red;
+}
+
+
+
+/* Submit button */
+/* Styling for submit buttons */
+.btn-default {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+    /* Hover effect for submit button */
+    .btn-default:hover {
+        background-color: #0056b3;
+    }
+
+
+
+/* Back to list link */
+/* Base styling for hyperlinks */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+    /* Hover effect for links */
+    a:hover {
+        text-decoration: underline;
+    }
+
+
+
+/* Wrapper for the table to make it responsive */
+/* Styling for a scrollable table container */
+    table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    
+}
+
+
+
+/* Styling the table itself */
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+/* Header and data cells */
+/* Base styling for table cells */
+th, td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+/* Styling for table headers */
+th {
+    background-color: #f4f4f4;  
+    font-weight: bold;  
+}
+
+
+
+/* Navbar Container */
+/* Styling for the navigation bar */
+.navbar {
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+    justify-content: right;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+
+    /* Navbar Links */
+    /* Styling for navbar links */
+    .navbar a {
+        color: darkblue;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        /* Hover Effects for Navbar Links */
+        .navbar a:hover {
+            background-color: gray;
+            color: #FFD700;
+        }
+
+        /* Active Link */
+        /* Styling for active navbar link */
+        .navbar a.active {
+            background-color: #FFD700;
+            color: #333;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+
+
+/* Footer */
+/* Styling for footer section */
+footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+
