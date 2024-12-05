@@ -12,13 +12,13 @@ This repository contains several small projects that I completed as part of my c
 
 ## **Projects**
 - Car Insurance
-- Casino - TwentyOne Game
+- Casino TwentyOne Game
 - Newsletter
 
 ## **Car Insurance**
 This project is an MVC web application that mimics a car insurance website. It takes user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued.
 
-## **Casino - TwentyOne Game**
+## **Casino TwentyOne Game**
 This project showcases advanced programming skills in the C# language by leveraging its comprehensive lexicon. It includes practical applications of lambda expressions, file I/O operations, DateTime functionalities, and more, demonstrating a thorough understanding of C# features and their real-world implementations.
 
 ## **Newsletter**
