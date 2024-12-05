@@ -8,20 +8,52 @@
 
 
 ## **Introduction**
-This repository contains the The Tech Academy Special C-Sharp Project that I completed as part of my course. In this README, you will find information about the project's purpose, the technologies used, the launch version, and other essential details to help you understand and potentially reproduce the project.
+This repository contains several small projects that I completed as part of my course. In this README, you will find information about the purpose of each project, the technologies used, the initial versions, and other important details to help you understand and potentially reproduce the projects.
+
+## **Projects**
+- Car Insurance
+- Casino - TwentyOne Game
+- Newsletter
+
+## **Car Insurance**
+This project is an MVC web application that mimics a car insurance website. It takes user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued.
+
+## **Casino - TwentyOne Game**
+This project showcases advanced programming skills in the C# language by leveraging its comprehensive lexicon. It includes practical applications of lambda expressions, file I/O operations, DateTime functionalities, and more, demonstrating a thorough understanding of C# features and their real-world implementations.
+
+## **Newsletter**
+This project is an MVC web application that simulates a newsletter website. Users can submit input, such as quotes, while an admin page allows employees to view and manage all submitted quotes efficiently. It highlights clean design, user interaction, and admin control in a streamlined platform.
 
 ## **Technologies**
 The project primarily makes use of the following technologies:
 
-- C-Sharp
+- C-Sharp:
+Used for core application development.
+Debugging and exception handling ensure code robustness and error resilience.
+- ASP.NET Framework:
+Provides the foundation for building web applications.
+Offers a comprehensive set of tools and libraries for web development.
+- Model-View-Controller (MVC) Framework:
+Facilitates a clear separation of concerns in the application architecture.
+Simplifies the development and maintenance of the application.
+- Entity Framework:
+Integrated within the MVC framework.
+Enables Object-Relational Mapping (ORM) for database management, improving productivity and reducing boilerplate code.
 
 ## **Launch**
 To ensure reproducibility, the project was developed using the following versions of the technologies:
 
 - C-Sharp
+- ASP.NET Framework
+- Entity Framework
+- Model-View-Controller (MVC) Framework
 
 ## **Table of Contents**
 - [Introduction](#introduction)
+- [Projects](#projects)
+- [Car Insurance](#carInsurance)
+- [Casino - TwentyOne Game](#CasinoTwentyOneGame)
+- [Newsletter](#Newsletter)
 - [Technologies](#technologies)
 - [Launch](#launch)
 - [Scope of Functionalities](#scope-of-functionalities)
@@ -34,9 +66,12 @@ To ensure reproducibility, the project was developed using the following version
 ## **Scope of Functionalities**
 The project serves as a basic example of a C-Sharp. It includes the following functionalities:
 - C-Sharp
+- ASP.NET Framework
+- Entity Framework
+- Model-View-Controller (MVC) Framework
 
 ## **Examples of Use**
-It demonstrates how to create a simple C-Sharp project.
+It demonstrates how to create a simple C-Sharp project and .NET.
 
 ## **Project Status**
 The project is complete and serves as a demonstration of skills acquired during the course. No further development is planned at this time.
