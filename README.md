@@ -51,8 +51,8 @@ To ensure reproducibility, the project was developed using the following version
 ## **Table of Contents**
 - [Introduction](#introduction)
 - [Projects](#projects)
-- [Car Insurance](#car Insurance)
-- [Casino - TwentyOne Game](#Casino TwentyOne Game)
+- [Car Insurance](#car-Insurance)
+- [Casino - TwentyOne Game](#Casino-TwentyOne-Game)
 - [Newsletter](#Newsletter)
 - [Technologies](#technologies)
 - [Launch](#launch)
