@@ -1,4 +1,4 @@
-# Jurijs_Grigorjevs_Personal_Portfolio
+# Jurijs Grigorjevs Personal Portfolio
 
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![ASP.NET](https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
